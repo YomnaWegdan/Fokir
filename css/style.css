@@ -1,0 +1,556 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+h1 , h2 , h3 , h4 , h5 , h6{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h3{
+    font-size:24px
+}
+h4{
+    font-size: 26px;
+    font-weight: 100;
+}
+h2{
+    font-size: 40px;
+}
+.clear{
+    clear: both;
+}
+button{
+    transition: .5s ease;
+    cursor: pointer;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Source Sans 3', sans-serif;
+}
+p , li{
+    line-height: 26px;
+}
+.line , .line-two{
+    width: 80px;
+    height: .5px;
+    text-align: center;
+    background-color: #FF305B;
+    margin: auto;
+    margin-top: 3px;
+}
+.line-two{
+    width: 140px;
+}
+.home{
+    background-image: url(../images/hero\ img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+   
+
+}
+
+.background-layer{
+    position: absolute;
+    left:  0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+    height: 100vh;
+
+
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding:0 50px;
+    background-color: #050505;
+}
+.navbar ul{
+    float: right;
+    margin-right: 50px;
+}
+.navbar ul li{
+    float: left;
+    padding:16px 14px;
+    list-style: none;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: #FF305B;
+}
+.navbar .logo a{
+    color: #FF305B;
+    margin: 16px 0;
+    margin-left: 50px;
+    font-size: 24px;
+    float: left;
+    text-decoration: none;
+}
+
+
+.nav-toggle{
+    float: right;
+    margin-top: 26px;
+    display: none;
+}
+.header{
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 200px;
+}
+
+.header h1{
+    color: #FF305B;
+    font-size:70px;
+    margin: 30px 0;
+
+}
+
+@keyframes animation{
+    0%{content: "D|";}
+    4%{content: "De|";}
+    8%{content: "Des|";}
+    12%{content: "Desi|";}
+    16%{content: "Desig|";}
+    20%{content: "Design|";}
+    22%{content: "Designe|";}
+    24%{content: "Designer|";}
+    26%{content: "Designe|";}
+    28%{content: "Desig|";}
+    30%{content: "Desi|";}
+    32%{content: "Des|";}
+    34%{content: "De|";}
+    36%{content: "D|";}
+    40%{content: "|";}
+    44%{content: "D|";}
+    48%{content: "De|";}
+    52%{content: "Dev|";}
+    56%{content: "Deve|";}
+    60%{content: "Devel|";}
+    64%{content: "Develo|";}
+    68%{content: "Develop|";}
+    72%{content: "Developer|";}
+    76%{content: "Develop|";}
+    80%{content: "Develo|";}
+    84%{content: "Devel|";}
+    88%{content: "Deve|";}
+    92%{content: "Dev|";}
+    96%{content: "De|";}
+    98%{content: "D|";}
+    100%{content: "|";}
+}
+
+.header h4{
+    margin-left: -10%;
+    text-align: center;
+}
+.header h4 span{
+    position: relative;
+    overflow: hidden;
+}
+.header h4 span::after {
+    content: '';
+    animation: animation 8s infinite alternate;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding:0px 5px;
+}
+
+/* about */
+.about{
+    padding: 50px 0;
+
+}
+
+.about .about-info {
+    float: left;
+    width: 50%;
+    margin: auto;
+    float: right;
+}
+.about .about-img {
+    float: left;
+    width: 30%;
+    position: relative;
+    border: 8px solid #555;
+    border-radius: 6px;
+
+    /* background-color: #FF305B; */
+
+}
+.about .about-img .about-parent-img{
+    /* border: 10px solid #555555; */
+    border-radius: 6px;
+    position: relative;
+    left: 22px;
+    top: 22px;
+}
+.about .about-img .about-parent-img img{
+    width: 100%;
+    border-radius: 6px;
+}
+.about .about-img .about-parent-img .overlay {
+    background-color: rgba(0, 0, 0, .5);
+    /* display: none; */
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    transition: opacity 1s, top 1s;
+}
+.about .about-img:hover .overlay{
+    opacity: 1;
+    height: 100%;
+    border-radius: 6px;
+}
+.about .about-img:hover .overlay .list{
+    margin-top: 220px;
+}
+
+
+
+
+
+.about .about-info h2{
+    position: relative;
+    border-left:5px solid #FF305B;
+    padding:6px 10px;
+
+}
+.about .about-info p{
+    position: relative;
+    padding: 16px 0;
+    border-bottom: 1px rgb(101, 101, 101) dashed;
+}
+.about .about-info ul{
+    padding: 16px 0; float: left;
+    width: 50%;
+}
+.about .about-info ul li{
+    list-style: none;
+    margin: 12px 0;
+    color:RGB(85, 85, 85) ;
+
+}
+.about .about-info ul li span{
+    color:black ;
+}
+.about .about-info button{
+    background-color: #FF305B;
+    color: white;
+    padding: 12px 16px;
+    border: 0;
+    border-radius: 6px;
+}
+.about .about-info button:hover{
+    background-color: red;
+}
+
+
+
+
+/* our services */
+.our-services{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.service-item{
+    float: left;
+    width: 25%;
+    padding:50px 12px  ;    
+    margin-top: 30px;
+
+}
+.service-item p{
+    margin-top: 12px;
+    color:RGB(85, 85, 85);
+}
+.service-item:hover{
+    background-color: white;
+   box-shadow: #777777 0 0 10px;
+}
+.service-item .service-icon i{
+    margin-bottom: 40px ;
+}
+.service-item:hover .service-icon {
+    transform: scale(1.1);
+}
+
+
+/* our portfolio */
+.our-portfolio{
+    text-align: center;
+    padding: 50px;
+}
+.our-portfolio .portfolio-btns button{
+    border: 0;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 16px;
+
+}
+.our-portfolio .portfolio-btns button:hover{
+    color: #FF305B;
+
+}
+.our-portfolio .portfolio-btns button:first-child{
+    color: #FF305B;
+
+}
+.our-portfolio .portfolio-item{
+    width: 33.3333%;
+    float: left;
+     padding: 20px; 
+    position: relative;
+    cursor: pointer;
+}
+.portfolio-item img{
+    width: 100%;
+}
+
+.portfolio-item:hover .img-overlay{  
+    background-color: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 20px;
+    bottom: 18px;
+    left: 20px;
+    right: 20px;
+    transition: all .5s  ease-in ;
+    overflow: hidden;
+}
+
+
+/* Testimonial */
+.testimonial{
+    background-color:#F1F1F1 ;
+    padding: 50px;
+    text-align: center;
+}
+.testimonial-item{
+    width: 25%;
+    float: left;
+
+}
+.testimonial-item h5{
+    color:RGB(85, 85, 85);
+    padding: 6px;
+}
+.testimonial-item .test-icon i{
+   margin-bottom: 24px ;
+}
+/* Feedback */
+.feedback{
+    margin: 50px;
+}
+.feedback h2{
+    text-align: center;
+}
+.feedback .card{
+    width: 80%;
+    margin: auto;
+    background-color: #F1F1F1;
+    padding: 50px;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 6px;
+    z-index: -3;
+    /* overflow: hidden; */
+}
+/* .feedback .card::before{
+    content: "";    
+    border: 100px solid transparent;
+    border-top: #FF305B solid 100px; 
+    border-left: #FF305B solid 100px; 
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+
+} */
+.card-triangle{
+    width: 40%;
+    height: 400px;
+    background-color: #FF305B;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 0 44%, 54% 0);
+    z-index: -1;
+}
+.card .card-img{
+    float: left;
+    width: 24%;
+    overflow: hidden;
+}
+.card .card-img img{
+    border-radius: 50%;
+}
+.card .card-info{
+    float: left;
+    width: 70%;
+}
+.card .card-info a{
+    text-decoration: none;
+    color:#777777;
+}
+.card .card-info p{
+    font-style: italic;
+    color:#555555;
+    padding: 10px 0;
+}
+
+/* start blog */
+.blog{
+    padding: 50px 0;
+    background-color: #F1F1F1;
+    padding: 50px 0px;
+}
+.blog h2{
+    text-align: center;
+
+}
+
+
+.blog-item{
+    float: left;
+    width: 33.333%;
+    padding: 30px ;
+    overflow: hidden;
+}
+.blog-item .blog-img{
+
+    max-width: 100%;
+	padding-top: 56.25%;
+	position: relative;
+	width: 100%;
+    cursor: pointer;
+}
+.blog-item .blog-img img  , .blog-item .blog-img iframe{
+    width: 100%;
+    height: auto;
+    
+}
+
+.blog-item .blog-img iframe , .blog-item .blog-img img {
+    width: 100%;
+    position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+    
+}
+
+
+.blog-item .blog-info{
+    background-color: white;
+    padding: 20px;
+    margin-top: -4px;
+
+}
+.blog-item .blog-info .date ,.blog-item .blog-info p{
+    color: #555555;
+    margin: 10px 0;
+}
+.blog-item .blog-info .more a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.blog-item .blog-info .more i{
+    margin-left: 8px;
+}
+
+/* Contact */
+.contact h2{
+    text-align: center;
+}
+.submit-form{
+    width: 70%;
+    margin: auto;
+    padding: 40px 0;
+}
+.submit-form input , .submit-form textarea{
+    width: 100%;
+    padding: 10px ;
+    margin: 10px 0;
+    outline: 0;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+}
+ #name ,  #mail{
+    width: 49.5%;
+}
+textarea{
+    resize: none;
+}
+.submit-form button{
+    background-color: #FF305B;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 18px 26px;
+    border: 0;
+    border-radius: 6px;
+}
+/* footer */
+.footer{
+    background-color: #333333;
+    padding: 50px 0;
+}
+.footer ul , .overlay ul {
+    width: max-content;
+    margin: auto
+}
+.footer ul li , .overlay ul li{
+        list-style: none; 
+        float: left;
+        margin: 10px;
+}
+.overlay ul {
+    margin-top: 50px;
+
+}
+.footer p{
+    color: white;
+    text-align: center;
+}
+.footer p span{
+    color: #FF305B;
+}
+.footer ul li a i:hover , .overlay ul li a i:hover{
+    color: #FF305B !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
