@@ -212,12 +212,12 @@ p , li{
     left: 0;
     right: 0;
     bottom: 0;
-    height: 0;
+    height: 100%;
     transition: opacity 1s, top 1s;
 }
 .about .about-img:hover .overlay{
     opacity: 1;
-    height: 100%;
+    height: 0%;
     border-radius: 6px;
 }
 .about .about-img:hover .overlay .list{
